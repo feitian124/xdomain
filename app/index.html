@@ -16,6 +16,10 @@
     <script>
       window.XdomainENV = {{ENV}};
       window.EmberENV = window.XdomainENV.EmberENV;
+      window.ENV = window.ENV || {};
+      window.ENV['simple-auth'] = {
+        authorizer: 'simple-auth-authorizer:oauth2-bearer'
+      }
     </script>
     <script src="assets/javascripts/xdomain.js"></script>
     <script>
