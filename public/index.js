@@ -1,3 +1,4 @@
+//var JSON = require ('json');
 var express = require('express');
 var app = express();
 var user = {
@@ -5,13 +6,21 @@ var user = {
     id: 1,
     name: 'serverSideName'
   }
-}
+};
+var token = {
+  "access_token":"2YotnFZFEjr1zCsicMWpAA",
+  "token_type":"bearer"
+};
 
 //app.use('/',express.static(path.join(__dirname,'public')));
 app.use('/',express.static(__dirname));
 
 app.get('/users/:id', function(req, res){
     res.send(JSON.stringify(user));
+});
+
+app.post('/token', function(req, res){
+    res.send(JSON.stringify(token));
 });
 
 var server = app.listen(3000, function() {

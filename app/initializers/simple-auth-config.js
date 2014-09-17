@@ -7,7 +7,7 @@ export default {
     window.ENV['simple-auth-oauth2'] = {
       serverTokenEndpoint: "http://192.168.0.112:3000/token",
       serverTokenRevokationEndpoint: "http://192.168.0.112:3000/revoke",
-      refreshAccessTokens: true
+      refreshAccessTokens: false
     };
   }
 };
