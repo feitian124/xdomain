@@ -17,6 +17,13 @@
       window.XdomainENV = {{ENV}};
       window.EmberENV = window.XdomainENV.EmberENV;
     </script>
+    <script src="assets/javascripts/xdomain.js"></script>
+    <script>
+      xdomain.debug = true;
+      xdomain.slaves({
+        'http://localhost:3000': '/proxy.html'
+      });
+    </script>
     <script src="assets/vendor.js"></script>
     <script src="assets/xdomain.js"></script>
     <script>
