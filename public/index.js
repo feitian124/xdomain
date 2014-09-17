@@ -4,7 +4,7 @@ var app = express();
 var user = {
   user: {
     id: 1,
-    name: 'serverSideName'
+    username: 'serverSideName'
   }
 };
 var token = {
@@ -16,6 +16,7 @@ var token = {
 app.use('/',express.static(__dirname));
 
 app.get('/users/:id', function(req, res){
+    console.log('req headers: ',JSON.stringify(req.headers));
     res.send(JSON.stringify(user));
 });
 

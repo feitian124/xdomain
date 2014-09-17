@@ -1,8 +1,8 @@
 {{#if session.isAuthenticated}}
-  <a {{ action 'invalidateSession' }}>Logout</a>
+  <a href="#" {{ action 'invalidateSession' }}>Logout</a>
 {{else}}
-  need login
+  {{#link-to 'login'}}Login{{/link-to}}
 {{/if}}
 
-<br/>
-name: {{name}}
+
+username: {{username}}
