@@ -16,12 +16,6 @@
     <script>
       window.XdomainENV = {{ENV}};
       window.EmberENV = window.XdomainENV.EmberENV;
-      window.ENV = window.ENV || {};
-      window.ENV['simple-auth'] = {
-        store: 'simple-auth-session-store:cookie',
-        authorizer: 'simple-auth-authorizer:oauth2-bearer',
-        crossOriginWhitelist: ['http://192.168.0.112:3000']
-      }
     </script>
     <script src="assets/javascripts/xdomain.js"></script>
     <script>
