@@ -24,10 +24,10 @@ open two terminal, one:
 another:  
 *  node public/index.js
 
-i hardcoded the host to my local ip for remote test, you may need change it.
+i hardcoded the host to my local ip `192.168.0.112` for remote test, you may need change it.
 
-Visit your ember app at http://192.168.0.112:4200.
-visit your server at http://192.168.0.112:3000.
+* Visit your ember app at http://192.168.0.112:4200.
+* visit your server at http://192.168.0.112:3000.
 
 ### Code Generators
 
