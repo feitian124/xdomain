@@ -1,8 +1,6 @@
-# Xdomain
-
-This README outlines the details of collaborating on this Ember application.
-
-A short introduction of this app could easily go here.
+# Xdomain and Ember 
+you must have met cors problem if you are develop ember.
+this repo is a prove of concept how to resolve this problem with xdomain.
 
 ## Prerequisites
 
@@ -20,8 +18,16 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
+open two terminal, one:  
 * `ember server`
-* Visit your app at http://localhost:4200.
+
+another:  
+*  node public/index.js
+
+i hardcoded the host to my local ip for remote test, you may need change it.
+
+Visit your ember app at http://192.168.0.112:4200.
+visit your server at http://192.168.0.112:3000.
 
 ### Code Generators
 

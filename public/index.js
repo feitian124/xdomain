@@ -25,6 +25,12 @@ app.use(function (req, res, next) {
   next();
 });
 
+app.get('/', function(req, res){
+  var userId = parseInt(req.params.id);
+  var name = 'serverSideName'+userId;
+  res.send('<h1>please visit /users/:id api to get data</h1>');
+});
+
 app.get('/users/:id', function(req, res){
   var userId = parseInt(req.params.id);
   var name = 'serverSideName'+userId;
