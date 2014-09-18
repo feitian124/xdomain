@@ -1,5 +1,6 @@
 {{#if session.isAuthenticated}}
-  <a href="#" {{ action 'invalidateSession' }}>Logout</a>
+<a href="#" {{ action 'invalidateSession' }}>Logout</a> <br/>
+  visit protected page {{#link-to 'hello'}}hello{{/link-to}}
   <br/>
   username: {{input value=username}}
   <br/>
@@ -8,6 +9,7 @@
   <a href="#" {{ action 'createUser' }}>createUser</a>
   <a href="#" {{ action 'deleteUser' }}>deleteUser</a>
 {{else}}
-  {{#link-to 'login'}}Login{{/link-to}}
+  please {{#link-to 'login'}}Login{{/link-to}} first!<br/>
+  visit protected page {{#link-to 'hello'}}hello{{/link-to}}
 {{/if}}
 
