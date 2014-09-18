@@ -26,7 +26,14 @@ app.use(function (req, res, next) {
 });
 
 app.get('/users/:id', function(req, res){
-  res.send(JSON.stringify(user));
+  var userId = parseInt(req.params.id);
+  var name = 'serverSideName'+userId;
+  res.send(JSON.stringify({
+    user: {
+      id: userId,
+      username: name
+    }
+  }));
 });
 
 app.post('/token', function(req, res){
