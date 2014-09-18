@@ -5,6 +5,9 @@
 {{/if}}
 
 <br/>
-username: {{username}}
+username: {{input value=username}}
 <br/>
-<a href="#" {{ action 'updateName' }}>updateName</a>
+<a href="#" {{ action 'getUser' }}>getUser</a>
+<a href="#" {{ action 'updateUser' }}>updateUser</a>
+<a href="#" {{ action 'createUser' }}>createUser</a>
+<a href="#" {{ action 'deleteUser' }}>deleteUser</a>

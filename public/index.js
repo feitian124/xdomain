@@ -42,6 +42,18 @@ app.get('/users/:id', function(req, res){
   }));
 });
 
+app.put('/users/:id', function(req, res){
+  res.status(200).send();
+});
+
+app.delete('/users/:id', function(req, res){
+  res.status(200).send();
+});
+
+app.post('/users', function(req, res){
+  res.status(200).send();
+});
+
 app.post('/token', function(req, res){
   res.send(JSON.stringify(token));
 });
